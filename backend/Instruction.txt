@@ -1,0 +1,78 @@
+https://virtualenvwrapper.readthedocs.io/en/latest/
+
+
+pip list --format=freeze > requirements.txt
+pip freeze -l > requirements.txt
+
+  https://git.heroku.com/still-taiga-35162.git
+
+git push heroku master
+
+1.to create db and save changes:python manage.py migrate
+2.to create table based on models:python manage.py makemigrations
+3.to open database createsuperuser:python manage.py createsuperuser
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Postgress setup
+---------------
+superuser :postgres
+password:Django123#
+Port:5432
+
+****************************
+backendDJ:
+startapp
+model
+create database,migration
+setting config 
+core,djangorestframework
+connect frontend deploy url
+
+frontendReact:
+create react app
+axioms
+bootstrap,router
+create web pages
+connect backend deploy url
+
+
+first deploy frontend(React)--
+git init
+heroku create $APP_NAME --buildpack mars/create-react-app
+git push heroku master
+after deploy backend redeploy frontend by updating link of hosted backend in App.js
+
+then backend(Django)--
+1.update settings.py with hosted frontend link in core_allowed_origin
+2.heroku login
+3.https://github.com/geekyshow1/deploydjangoheroku
+4. git init,add,commit
+5.heroku create @app - name
+6.heroku git:remote -a pn-plan-reactdjango
+7.pip install gunicorn/waitress
+8.pip install whitenoise for static files
+9.add whitenoise in 2nd line inside middleware of settings
+10.procfile
+waitress benefit-->test website early how it will look in server no django-heroku we have used here
+for waitress:
+web: waitress-serve --port=$PORT projectname.wsgi:application
+11.pip freeze > requirements.txt
+12. heroku config:set DISABLE_COLLECTSTATIC=1
+Setting DISABLE_COLLECTSTATIC and restarting ⬢ pn-plan-reactdjango... done, v3
+DISABLE_COLLECTSTATIC: 1  if no static files then
+13.git push heroku master
+
+then deploy again frontend so final website will show on forntend host link...:)
+
+
+
+
+
+
+
+
+
+
+
+
+
