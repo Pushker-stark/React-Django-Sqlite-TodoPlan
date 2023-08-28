@@ -1,3 +1,6 @@
+hosted in pythonanywhere :
+https://www.youtube.com/watch?v=xtnUwvjOThg&t=364s
+
 https://virtualenvwrapper.readthedocs.io/en/latest/
 
 
