@@ -6,7 +6,7 @@ import axios from 'axios'
 
 // Axios Instance
 const ai = axios.create({
-  baseURL: 'https://pn-plan-reactdjango.herokuapp.com/api'
+  baseURL: 'https://pushkercuc123.pythonanywhere.com/api'
 })
 
 class App extends Component {
