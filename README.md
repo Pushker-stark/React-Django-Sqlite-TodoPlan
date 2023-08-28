@@ -1,2 +1,3 @@
 # React-Django-Sqlite-TodoPlan
-[https://pn-front-react.herokuapp.com/ https://pn-plan-reactdjango.herokuapp.com/](https://reacdj-todo-webapp.netlify.app/)https://reacdj-todo-webapp.netlify.app/
+Main site React Frontend deployed on Netlify - https://reacdj-todo-webapp.netlify.app/
+Backend Deploy on Pythonanywhere - http://pushkercuc123.pythonanywhere.com/
