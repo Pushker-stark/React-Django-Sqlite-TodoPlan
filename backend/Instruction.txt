@@ -1,5 +1,12 @@
 hosted in pythonanywhere :
 https://www.youtube.com/watch?v=xtnUwvjOThg&t=364s
+1.used this git repo and uses bash of pythonanywhere deployd manually on it using this repo to clone on it.
+2.changed the settings file core allwed to connect frontend via rest api
+
+hosted frontend in netlify manually
+https://www.youtube.com/watch?v=IokPiSZpXDY
+1. npm run build to create build folder and manully uploqaded on site 
+2. and changed the axios link to connect bacckend and finally the hosted link is updated into backend setting core
 
 https://virtualenvwrapper.readthedocs.io/en/latest/
 
